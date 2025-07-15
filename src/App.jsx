@@ -108,17 +108,17 @@ function App() {
         <button onClick={reset} className='border border-black p-1 rounded-lg'>Reset</button>
       </div>
       <div className='flex justify-center mt-20'>
-        <div className='border-black min-w-96 bg-slate-600'>
+        <div className='border-black bg-slate-600 mb-10'>
           <div className='grid grid-cols-3 gap-2 h-full'>
-            <div className={`flex cursor-pointer ${containingCell([0,0], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 0)}>{board[0][0]}</div>
-            <div className={`flex cursor-pointer ${containingCell([0,1], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 1)}>{board[0][1]}</div>
-            <div className={`flex cursor-pointer ${containingCell([0,2], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 2)}>{board[0][2]}</div>
-            <div className={`flex cursor-pointer ${containingCell([1,0], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 0)}>{board[1][0]}</div>
-            <div className={`flex cursor-pointer ${containingCell([1,1], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 1)}>{board[1][1]}</div>
-            <div className={`flex cursor-pointer ${containingCell([1,2], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 2)}>{board[1][2]}</div>
-            <div className={`flex cursor-pointer ${containingCell([2,0], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 0)}>{board[2][0]}</div>
-            <div className={`flex cursor-pointer ${containingCell([2,1], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 1)}>{board[2][1]}</div>
-            <div className={`flex cursor-pointer ${containingCell([2,2], winningCell) ? "bg-green-300" : "bg-white"} h-40 w-40 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 2)}>{board[2][2]}</div>
+            <div className={`flex cursor-pointer ${containingCell([0,0], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 0)}>{board[0][0]}</div>
+            <div className={`flex cursor-pointer ${containingCell([0,1], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 1)}>{board[0][1]}</div>
+            <div className={`flex cursor-pointer ${containingCell([0,2], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 0, 2)}>{board[0][2]}</div>
+            <div className={`flex cursor-pointer ${containingCell([1,0], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 0)}>{board[1][0]}</div>
+            <div className={`flex cursor-pointer ${containingCell([1,1], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 1)}>{board[1][1]}</div>
+            <div className={`flex cursor-pointer ${containingCell([1,2], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 1, 2)}>{board[1][2]}</div>
+            <div className={`flex cursor-pointer ${containingCell([2,0], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 0)}>{board[2][0]}</div>
+            <div className={`flex cursor-pointer ${containingCell([2,1], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 1)}>{board[2][1]}</div>
+            <div className={`flex cursor-pointer ${containingCell([2,2], winningCell) ? "bg-green-300" : "bg-white"} h-20 sm:h-20 md:h-40 lg:h-48 xl:h-56 w-20 sm:w-20 md:w-40 lg:w-48 xl:w-56 justify-center items-center text-6xl`} onClick={(e)=>handleClick(e, 2, 2)}>{board[2][2]}</div>
           </div>
         </div>
       </div>
